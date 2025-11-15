@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><title>Contact Me</title></head>
+<head>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="../CSS/contactme.css">
-    <body>
-        <h3>Contact Me</h3>
-     <form method="GET">
-        <!pre> 
-        First Name: <input type="text" name="firstname" required><br><br>
-        Last Name:  <input type="text" name="firstname" required><br><br>
-        Email:      <input type="email" required> <br><br>
-        Company:    <input type="text" name="companyname"><br><br>
-        Reason for Contact:<br>
-        <input type="radio" name="reason" required>Project<br><br>
-        <input type="radio" name="reason">Thesis<br><br>
-        <input type="radio" name="reason">Job<br><br>
-        Services Provided:<br>
-        <input type="checkbox" name="service" required>Programming<br><br>
-        <input type="checkbox" name="service" required>Hacking<br><br>
-        <input type="checkbox" name="service" required>Research<br><br>
-        <input type="checkbox" name="service" required>Debates<br><br>
-        <input type="checkbox" name="service" required>Adjuticating<br><br>
-    
-        Book an Appointment:<br>
-        <input type="date" id="date" name="date" required> <br><br>
+</head>
 
-        <input type="submit" value="Book Now">   
+<body>
+    <h3>Contact Me</h3>
+
+    <form method="GET">
+
+        <div class="form-row">
+            <label>First Name:</label>
+            <input type="text" name="firstname" required>
+        </div>
+
+        <div class="form-row">
+            <label>Last Name:</label>
+            <input type="text" name="lastname" required>
+        </div>
+
+        <div class="form-row">
+            <label>Email:</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div class="form-row">
+            <label>Company:</label>
+            <input type="text" name="companyname">
+        </div>
+
+        <p>Reason for Contact:</p>
+        <label><input type="radio" name="reason" value="Project" required> Project</label><br>
+        <label><input type="radio" name="reason" value="Thesis"> Thesis</label><br>
+        <label><input type="radio" name="reason" value="Job"> Job</label><br>
+
+        <p>Services Provided:</p>
+        <label><input type="checkbox" name="service" value="Programming"> Programming</label><br>
+        <label><input type="checkbox" name="service" value="Hacking"> Hacking</label><br>
+        <label><input type="checkbox" name="service" value="Research"> Research</label><br>
+        <label><input type="checkbox" name="service" value="Debates"> Debates</label><br>
+        <label><input type="checkbox" name="service" value="Adjudicating"> Adjudicating</label><br><br>
+
+        <div class="form-row">
+            <label>Book Appointment:</label>
+            <input type="date" name="date" required>
+        </div>
+
+        <input type="submit" value="Book Now">
         <input type="reset" value="Reset">
-    
-        <!/pre>
 
-     </form>
-        
-    </body>
+    </form>
+</body>
 </html>
