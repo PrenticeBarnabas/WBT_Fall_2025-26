@@ -1,24 +1,85 @@
-<html>
-    <head><title>Education</title></head>
-    <body>
-        <p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
 
-        </p>
-        <h3>Education</h3>
-        <p><strong>Institutions:</strong></p>
-        <ol>
-            <li>AIUB</li>
-            <img src="../Data Images/C++.png" alt="C++" width="42" length="42">
-            <li>MPSC</li>
-            <img src="../Data Images/python.png" alt="Python" width="42" length="42">
-            <li>MGHS</li>
-            <img src="../Data Images/python.png" alt="Python" width="42" length="42">
-        </ol>
-        <p><strong>Results</strong></p>
-        <ul>
-            <li>HSC</li>
-            <li>SSC</li>
-        </ul>
-        <a href="../index.html">Go To Index</a>
-    </body>
+        h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        .education-section {
+            display: flex;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .logos {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .logos img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .details {
+            flex: 1;
+        }
+
+        .details textarea {
+            width: 100%;
+            height: 250px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h3>Education</h3>
+    <div class="education-section">
+        <div class="logos">
+            <img src="../Data Images/aiub.png" alt="AIUB">
+            <img src="../Data Images/mpsc.png" alt="MPSC">
+            <img src="../Data Images/mghs.png" alt="MGHS">
+            <img src="../Data Images/another-logo.png" alt="Other">
+        </div>
+        <div class="details">
+            <textarea placeholder="Add your educational details here..."></textarea>
+        </div>
+    </div>
+    <a href="../index.html">Go To Index</a>
+</body>
 </html>
